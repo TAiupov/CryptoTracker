@@ -44,7 +44,7 @@ extension CoinRowView {
                 .font(.caption)
                 .foregroundColor(Color.theme.secondaryText)
                 .frame(minWidth: 30)
-            Circle()
+            CoinImageView(coin: coin)
                 .frame(width: 30, height: 30)
             Text(coin.symbol.uppercased())
                 .font(.headline)
@@ -66,7 +66,7 @@ extension CoinRowView {
         VStack(alignment: .trailing) {
             Text("\(coin.currentPrice.asCurrencyWith2Decimals())")
                 .bold()
-                .foregroundColor(Color.theme.accent)
+//                .foregroundColor(Color.theme.accent)
             Text(coin.priceChangePercentage24H?.asPercentString() ?? "")
                 .foregroundColor(
                     (coin.priceChangePercentage24H ?? 0) >= 0 ? Color.theme.green : Color.theme.red
