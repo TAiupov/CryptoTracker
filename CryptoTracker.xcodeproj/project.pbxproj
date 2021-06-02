@@ -32,6 +32,7 @@
 		CF8A36E02666BF66002E0320 /* CoinImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF8A36DF2666BF66002E0320 /* CoinImageView.swift */; };
 		CF8A36E22666C0A6002E0320 /* CoinImageService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF8A36E12666C0A6002E0320 /* CoinImageService.swift */; };
 		CF8A36E42666C263002E0320 /* CoinImageViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF8A36E32666C263002E0320 /* CoinImageViewModel.swift */; };
+		CF8A373426680C20002E0320 /* LocalFileManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF8A373326680C20002E0320 /* LocalFileManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -62,6 +63,7 @@
 		CF8A36DF2666BF66002E0320 /* CoinImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinImageView.swift; sourceTree = "<group>"; };
 		CF8A36E12666C0A6002E0320 /* CoinImageService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = CoinImageService.swift; path = ../../../../../../CoinImageService.swift; sourceTree = "<group>"; };
 		CF8A36E32666C263002E0320 /* CoinImageViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinImageViewModel.swift; sourceTree = "<group>"; };
+		CF8A373326680C20002E0320 /* LocalFileManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalFileManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -207,6 +209,7 @@
 			isa = PBXGroup;
 			children = (
 				CF81C82B26658AE4004530D6 /* NetworkManager.swift */,
+				CF8A373326680C20002E0320 /* LocalFileManager.swift */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -312,6 +315,7 @@
 				CF81C812266561E8004530D6 /* StatisticModel.swift in Sources */,
 				CF81C824266570DC004530D6 /* CoinRowView.swift in Sources */,
 				CF81C7EC266560C6004530D6 /* CryptoTrackerApp.swift in Sources */,
+				CF8A373426680C20002E0320 /* LocalFileManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
