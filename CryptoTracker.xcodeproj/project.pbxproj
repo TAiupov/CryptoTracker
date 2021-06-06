@@ -36,6 +36,7 @@
 		CFA06725266AE96B000FBF48 /* SearchBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFA06724266AE96B000FBF48 /* SearchBarView.swift */; };
 		CFA06727266BEC0C000FBF48 /* StatisticView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFA06726266BEC0C000FBF48 /* StatisticView.swift */; };
 		CFA06729266BF46D000FBF48 /* HomeStatsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFA06728266BF46D000FBF48 /* HomeStatsView.swift */; };
+		CFA0672D266D6DAD000FBF48 /* MarketDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFA0672C266D6DAD000FBF48 /* MarketDataService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -70,6 +71,7 @@
 		CFA06724266AE96B000FBF48 /* SearchBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBarView.swift; sourceTree = "<group>"; };
 		CFA06726266BEC0C000FBF48 /* StatisticView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatisticView.swift; sourceTree = "<group>"; };
 		CFA06728266BF46D000FBF48 /* HomeStatsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeStatsView.swift; sourceTree = "<group>"; };
+		CFA0672C266D6DAD000FBF48 /* MarketDataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarketDataService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -210,6 +212,7 @@
 			children = (
 				CF81C828266580AB004530D6 /* CoinDataService.swift */,
 				CF8A36E12666C0A6002E0320 /* CoinImageService.swift */,
+				CFA0672C266D6DAD000FBF48 /* MarketDataService.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -306,6 +309,7 @@
 				CFA06729266BF46D000FBF48 /* HomeStatsView.swift in Sources */,
 				CF81C81C266565A0004530D6 /* HomeView.swift in Sources */,
 				CF81C7EE266560C6004530D6 /* ContentView.swift in Sources */,
+				CFA0672D266D6DAD000FBF48 /* MarketDataService.swift in Sources */,
 				CF81C829266580AB004530D6 /* CoinDataService.swift in Sources */,
 				CFA06725266AE96B000FBF48 /* SearchBarView.swift in Sources */,
 				CF8A36E02666BF66002E0320 /* CoinImageView.swift in Sources */,
