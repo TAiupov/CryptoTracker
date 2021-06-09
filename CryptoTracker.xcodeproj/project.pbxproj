@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CF72ABFA2670678C00A38C35 /* PortfolioDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF72ABF92670678C00A38C35 /* PortfolioDataService.swift */; };
 		CF81C7EC266560C6004530D6 /* CryptoTrackerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF81C7EB266560C6004530D6 /* CryptoTrackerApp.swift */; };
 		CF81C7EE266560C6004530D6 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF81C7ED266560C6004530D6 /* ContentView.swift */; };
 		CF81C7F3266560C9004530D6 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CF81C7F2266560C9004530D6 /* Preview Assets.xcassets */; };
@@ -43,6 +44,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		CF72ABF92670678C00A38C35 /* PortfolioDataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PortfolioDataService.swift; sourceTree = "<group>"; };
 		CF81C7E8266560C6004530D6 /* CryptoTracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CryptoTracker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CF81C7EB266560C6004530D6 /* CryptoTrackerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoTrackerApp.swift; sourceTree = "<group>"; };
 		CF81C7ED266560C6004530D6 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -221,6 +223,7 @@
 				CF81C828266580AB004530D6 /* CoinDataService.swift */,
 				CF8A36E12666C0A6002E0320 /* CoinImageService.swift */,
 				CFA0672C266D6DAD000FBF48 /* MarketDataService.swift */,
+				CF72ABF92670678C00A38C35 /* PortfolioDataService.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -343,6 +346,7 @@
 				CF81C812266561E8004530D6 /* StatisticModel.swift in Sources */,
 				CF81C824266570DC004530D6 /* CoinRowView.swift in Sources */,
 				CF81C7EC266560C6004530D6 /* CryptoTrackerApp.swift in Sources */,
+				CF72ABFA2670678C00A38C35 /* PortfolioDataService.swift in Sources */,
 				CF8A373426680C20002E0320 /* LocalFileManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -2,7 +2,7 @@
 //  PortfolioView.swift
 //  CryptoTracker
 //
-//  Created by Тагир Аюпов on 2021-06-07.
+//  Created by Tagir Aiupov on 2021-06-07.
 //
 
 import SwiftUI
@@ -35,6 +35,11 @@ struct PortfolioView: View {
                         trailingNavBarButtons
                     }
                 })
+                .onChange(of: vm.searchText, perform: { value in
+                    if value == "" {
+                        removeSelectedCoin()
+                    }
+                })
             }
         }
     }
@@ -52,13 +57,13 @@ extension PortfolioView {
     private var coinLogoList: some View {
         ScrollView(.horizontal, showsIndicators: false, content: {
             LazyHStack(spacing: 10) {
-                ForEach(vm.allCoins) { coin in
+                ForEach(vm.searchText.isEmpty ? vm.portfolioCoins : vm.allCoins) { coin in
                     CoinLogoView(coin: coin)
                         .frame(width: 75)
                         .padding(4)
                         .onTapGesture {
                             withAnimation {
-                                selectedCoin = coin
+                                updateSelectedCoin(coin: coin)
                             }
                         }
                         .background(
@@ -71,6 +76,17 @@ extension PortfolioView {
                 .padding(.leading)
             }
         })
+    }
+    
+    private func updateSelectedCoin(coin: CoinModel) {
+        selectedCoin = coin
+        if let portfolioCoin = vm.portfolioCoins.first(where: { $0.id == coin.id }),
+           let amount = portfolioCoin.currentHoldings {
+            quantityText = "\(amount)"
+        } else {
+            quantityText = ""
+        }
+        
     }
     
     private var portfolioInputSection: some View {
@@ -122,10 +138,13 @@ extension PortfolioView {
     }
     
     private func saveButtonPressed() {
-        guard let coin = selectedCoin else { return }
+        guard let coin = selectedCoin,
+              let amount = Double(quantityText)
+              else { return }
         
         
         // save portfolio
+        vm.updatePortfolio(coin: coin, amount: amount)
         
         withAnimation(.easeIn) {
             showCheckMark = true

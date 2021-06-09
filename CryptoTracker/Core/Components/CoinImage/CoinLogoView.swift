@@ -2,7 +2,7 @@
 //  CoinLogoView.swift
 //  CryptoTracker
 //
-//  Created by Тагир Аюпов on 2021-06-07.
+//  Created by Tagir Aiupov on 2021-06-07.
 //
 
 import SwiftUI
