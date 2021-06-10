@@ -106,13 +106,45 @@ extension HomeView {
     
     private var columnTitles: some View {
         HStack {
-            Text("Coin")
+            HStack(spacing: 4.0) {
+                Text("Coin")
+                Image(systemName: "chevron.down")
+                    .opacity((vm.sortoption == .rank || vm.sortoption == .rankReversed) ? 1.0 : 0.0)
+                    .rotationEffect(Angle(degrees: vm.sortoption == .rank ? 0: 180))
+            }
+            .onTapGesture {
+                withAnimation(.default) {
+                    vm.sortoption = vm.sortoption == .rank ? .rankReversed : .rank
+                }
+            }
             Spacer()
             if showPortfolio {
-                Text("Holdings")
+                HStack {
+                    Text("Holdings")
+                    Image(systemName: "chevron.down")
+                        .opacity((vm.sortoption == .holdings || vm.sortoption == .holdingsReversed) ? 1.0 : 0.0)
+                        .rotationEffect(Angle(degrees: vm.sortoption == .holdings ? 0: 180))
+                }
+                .onTapGesture {
+                    withAnimation(.default) {
+                        vm.sortoption = vm.sortoption == .holdings ? .holdingsReversed : .holdings
+                    }
+                }
+                
             }
-            Text("Price")
-                .frame(width: UIScreen.main.bounds.width / 3.5, alignment: .trailing)
+            HStack {
+                Text("Price")
+                Image(systemName: "chevron.down")
+                    .opacity((vm.sortoption == .price || vm.sortoption == .priceReversed) ? 1.0 : 0.0)
+                    .rotationEffect(Angle(degrees: vm.sortoption == .price ? 0: 180))
+            }
+            .frame(width: UIScreen.main.bounds.width / 3.5, alignment: .trailing)
+            .onTapGesture {
+                withAnimation(.default) {
+                    vm.sortoption = vm.sortoption == .price ? .priceReversed : .price
+                }
+            }
+            
             Button(action: {
                 withAnimation(.linear(duration: 2.0)) {
                     vm.reloadData()
