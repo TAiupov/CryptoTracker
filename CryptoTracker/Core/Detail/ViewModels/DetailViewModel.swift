@@ -2,7 +2,7 @@
 //  DetailViewModel.swift
 //  CryptoTracker
 //
-//  Created by Тагир Аюпов on 2021-06-12.
+//  Created by Tagir Aiupov on 2021-06-12.
 //
 
 import Foundation

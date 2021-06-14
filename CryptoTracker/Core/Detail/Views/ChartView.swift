@@ -2,7 +2,7 @@
 //  ChartView.swift
 //  CryptoTracker
 //
-//  Created by Тагир Аюпов on 2021-06-14.
+//  Created by Tagir Aiupov on 2021-06-14.
 //
 
 import SwiftUI
@@ -43,7 +43,7 @@ struct ChartView: View {
         .font(.caption)
         .foregroundColor(Color.theme.secondaryText)
         .onAppear {
-            DispatchQueue.main.asyncAfter(deadline: .now() + 0.3) {
+            DispatchQueue.main.asyncAfter(deadline: .now() + 0.4) {
                 withAnimation {
                     percentage = 1.0
                 }
