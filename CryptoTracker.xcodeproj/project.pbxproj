@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CF1D7660267BCEFD00239CBD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CF1D765F267BCEFD00239CBD /* LaunchScreen.storyboard */; };
+		CF1D7662267BD0C200239CBD /* LaunchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF1D7661267BD0C200239CBD /* LaunchView.swift */; };
 		CF72ABFA2670678C00A38C35 /* PortfolioDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF72ABF92670678C00A38C35 /* PortfolioDataService.swift */; };
 		CF72ABFC2671809600A38C35 /* HapticManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF72ABFB2671809600A38C35 /* HapticManager.swift */; };
 		CF72AC6C2674435400A38C35 /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF72AC6B2674435400A38C35 /* DetailView.swift */; };
@@ -50,6 +52,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		CF1D765F267BCEFD00239CBD /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		CF1D7661267BD0C200239CBD /* LaunchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchView.swift; sourceTree = "<group>"; };
 		CF72ABF92670678C00A38C35 /* PortfolioDataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PortfolioDataService.swift; sourceTree = "<group>"; };
 		CF72ABFB2671809600A38C35 /* HapticManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HapticManager.swift; sourceTree = "<group>"; };
 		CF72AC6B2674435400A38C35 /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
@@ -105,6 +109,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		CF1D765D267BCEE200239CBD /* Launch */ = {
+			isa = PBXGroup;
+			children = (
+				CF1D765E267BCEEA00239CBD /* Views */,
+			);
+			path = Launch;
+			sourceTree = "<group>";
+		};
+		CF1D765E267BCEEA00239CBD /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				CF1D765F267BCEFD00239CBD /* LaunchScreen.storyboard */,
+				CF1D7661267BD0C200239CBD /* LaunchView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		CF72AC682674432B00A38C35 /* Detail */ = {
 			isa = PBXGroup;
 			children = (
@@ -216,6 +237,7 @@
 		CF81C817266564F5004530D6 /* Core */ = {
 			isa = PBXGroup;
 			children = (
+				CF1D765D267BCEE200239CBD /* Launch */,
 				CF7C876D267A5FCF0031FF3A /* Settings */,
 				CF72AC682674432B00A38C35 /* Detail */,
 				CF81C81D26656640004530D6 /* Components */,
@@ -362,6 +384,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CF1D7660267BCEFD00239CBD /* LaunchScreen.storyboard in Resources */,
 				CF81C7F3266560C9004530D6 /* Preview Assets.xcassets in Resources */,
 				CF81C7FD2665617B004530D6 /* Assets.xcassets in Resources */,
 			);
@@ -390,6 +413,7 @@
 				CF81C82026656664004530D6 /* CircleButtonView.swift in Sources */,
 				CF81C805266561B6004530D6 /* Date.swift in Sources */,
 				CF81C809266561B6004530D6 /* Color.swift in Sources */,
+				CF1D7662267BD0C200239CBD /* LaunchView.swift in Sources */,
 				CF81C806266561B6004530D6 /* String.swift in Sources */,
 				CF81C807266561B6004530D6 /* UIApplication.swift in Sources */,
 				CF8A36E42666C263002E0320 /* CoinImageViewModel.swift in Sources */,
