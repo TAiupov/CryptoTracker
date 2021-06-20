@@ -36,7 +36,7 @@ struct DetailView: View {
             VStack {
                 ChartView(coin: vm.coin)
                     .padding(.vertical)
-                VStack(spacing: 20) {
+                VStack(alignment: .leading, spacing: 20) {
                     overviewTitle
                     Divider()
                     descriptionSection
@@ -123,7 +123,7 @@ extension DetailView {
     
     private var overviewGrid: some View {
         LazyVGrid(columns: columns,
-                  alignment: .center,
+                  alignment: .leading,
                   spacing: spacing,
                   pinnedViews: [],
                   content: {
@@ -136,7 +136,7 @@ extension DetailView {
     
     private var additionalGrid: some View {
         LazyVGrid(columns: columns,
-                  alignment: .center,
+                  alignment: .leading,
                   spacing: spacing,
                   pinnedViews: [],
                   content: {
