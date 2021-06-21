@@ -16,10 +16,16 @@ struct SettingsView: View {
     
     var body: some View {
         NavigationView {
-            List {
-                topSection
-                coinGeckoSection
-                applicationSection
+            ZStack {
+                Color.theme.background.ignoresSafeArea()
+                List {
+                    topSection
+                        .listRowBackground(Color.theme.background)
+                    coinGeckoSection
+                        .listRowBackground(Color.theme.background)
+                    applicationSection
+                        .listRowBackground(Color.theme.background)
+                }
             }
             .font(.headline)
             .accentColor(.blue)
